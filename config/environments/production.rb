@@ -75,4 +75,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # This tells your application to set the secret key using the environment variable instead of looking for it in secrets.yml. 
+  # secrets.yml should never be in your repo like GitHub or Heroku
+  # Github puts these files in .gitignore for security.
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
+
 end
