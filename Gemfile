@@ -44,10 +44,9 @@ gem 'puma'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :production do    
-    gem 'pg', '0.12.2'  
-end  
-group :development do  
-    gem 'sqlite3', '1.3.4'  
+gem 'pg'
+
+group :development, :test do
+    gem 'sqlite3'
 end
 
