@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BasicWebsite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+	<head>
+  		<title><%= yield(:title) %> | Ascend</title>
+  		
+  		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true  %>
+  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  		<%= csrf_meta_tags %>
+	</head>
 <body>
+	<%= render 'shared/navbar' %>
 
-<%= render 'shared/navbar' %>
-<%= yield %>
+	<div class="wrapper">
+		<div class="main-page-content <%= controller.controller_name %>" >
+			<%= yield %>
+		</div>
+	
+		<div class="push"></div>
+	</div>
+
+	<div class="footer">
+		<%= render 'shared/footer' %>
+	</div>
+
 
 </body>
 </html>

@@ -1,0 +1,50 @@
+.main-page-content{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.navbar{
+	background-color: #242729;
+}
+
+.wrapper {
+   	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.push{
+	height: 200px;
+	clear: both;
+}
+
+.footer {
+    height: 200px; /* .push must be the same height as .footer */
+    background-color: #242729;
+	color: #CCCCCC;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.map{ 
+	margin: 0 auto;
+	border: 0; 
+	position: relative;
+    padding-bottom: 35%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
