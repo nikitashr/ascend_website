@@ -30,6 +30,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+# Use puma as a web server. Production apps should always specify the webserver explicitly in the Procfile
+gem 'puma'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -48,3 +50,4 @@ end
 group :development do  
     gem 'sqlite3', '1.3.4'  
 end
+
