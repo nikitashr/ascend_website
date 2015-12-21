@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get "portfolio" => "pages#portfolio", as: :portfolio
   get "team" => "pages#team", as: :team
   get "about" => "pages#about", as: :about
-  get "contact" => "pages#contact", as: :contact
+  # get "contact" => "pages#contact", as: :contact
+
+  resources :contact, only: [:new, :create]
 
 
 
