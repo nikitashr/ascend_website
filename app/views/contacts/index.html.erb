@@ -1,0 +1,26 @@
+<h1>Listing all Contacts</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Company Name</th>
+    <th>Company URL</th>
+    <th>Message</th>
+  </tr>
+ 
+  <% @contacts.each do |contact| %>
+    <tr>
+      <td><%= contact.name %></td>
+      <td><%= contact.email %></td>
+      <td><%= contact.company_name %></td>
+      <td><%= contact.company_url %></td>
+      <td><%= contact.message %></td>
+      <td><%= link_to 'Show', contact_path(contact) %></td>
+      <td><%= link_to 'Destroy', contact_path(contact),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+
+    </tr>
+  <% end %>
+</table>

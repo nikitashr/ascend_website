@@ -19,6 +19,15 @@ html, body {
 	margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
 }
 
+.skinny_wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
+}
+
 .push{
 	height: 200px;
 	clear: both;
