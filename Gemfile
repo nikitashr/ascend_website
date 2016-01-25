@@ -30,7 +30,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # dotenv loads variables from a .env file into ENV when the environment is bootstrapped.
 gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
 # adds helpers for the reCAPTCHA API
-gem "recaptcha", require: "recaptcha/rails"
+gem 'recaptcha', require: 'recaptcha/rails'
+
+# adds helpers for the GoogleMap API
+gem 'geocoder'
+gem 'gmaps4rails'
+gem 'underscore-rails'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development

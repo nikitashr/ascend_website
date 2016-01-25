@@ -41,19 +41,11 @@ html, body {
     padding-bottom: 20px;
 }
 
-.map{ 
-	margin: 0 auto;
-	border: 0; 
-	position: relative;
-    padding-bottom: 35%; // This is the aspect ratio
-    height: 0;
-    overflow: hidden;
-}
-
-.map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-}
+#map-container {
+   height: 400px;  
+ }
+ 
+#map-canvas {
+   height: 384px;
+   width: 100%;
+ }
