@@ -47,7 +47,7 @@ class ContactsController < ApplicationController
   end
 
   def authenticate
-    if authenticate_with_http_basic { |u, p| u == 'admin' && p == 'admin123' }
+    if authenticate_with_http_basic { |u, p| u == 'admin' && p == 'ascend123' }
     else
       request_http_basic_authentication
     end
