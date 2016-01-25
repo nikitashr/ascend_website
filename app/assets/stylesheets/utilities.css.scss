@@ -29,12 +29,12 @@ html, body {
 }
 
 .push{
-	height: 200px;
+	height: 210px;
 	clear: both;
 }
 
 .footer {
-    height: 200px; /* .push must be the same height as .footer */
+    height: 210px; /* .push must be the same height as .footer */
     background-color: #242729;
 	color: #CCCCCC;
 	padding-top: 20px;
@@ -42,14 +42,15 @@ html, body {
 }
 
 .footer i {
-  	font-size: 16px;
-  	padding-top: 14px;
- 	margin-left: -40px;
- 	padding-right: 60px;
+  	
 }
 
 .footer li {
 	display: inline;
+	font-size: 14px;
+  	padding-top: 14px;
+ 	margin-left: -40px;
+ 	padding-right: 60px;
 }
 
 .footer a {
