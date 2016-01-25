@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   get "about" => "pages#about", as: :about
 
   resources :contacts
-  #get "contacts/new" => "contacts#new"
-  #get "contacts" => "contacts#index"
+  #get "contacts/list" => "contacts#index"
+  #get "contacts" => "contacts#new"
   #get "contacts/:id" => "contacts#show"
   #post "contacts" => "contacts#create"
   #delete "contacts/:id" => "contacts#destroy"

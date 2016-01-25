@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   # TODO: Password protect this
-  #before_action :index, :authenticate
+  before_action :authenticate, except: [:new]
 
   def index
      @contacts = Contact.all
