@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :index, :authenticate
-  
+
   # GET /users
   # GET /users.json
   def index
@@ -76,4 +76,11 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:latitude, :longitude, :address, :description, :title)
     end
+
+    def authenticate
+    if authenticate_with_http_basic { |u, p| u == 'admin' && p == 'admin123' }
+    else
+      request_http_basic_authentication
+    end
+  end
 end
