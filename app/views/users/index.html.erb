@@ -46,7 +46,9 @@
     handler = Gmaps.build('Google');
     handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
         markers = handler.addMarkers(<%=raw @hash.to_json %>);
-        handler.bounds.extendWith(markers);
-        handler.fitMapToBounds();
+        // to center on a marker
+        handler.map.centerOn(markers[0]); 
+        // to set the map zoom
+        handler.getMap().setZoom(16);
     });
 </script>

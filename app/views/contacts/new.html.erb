@@ -5,18 +5,12 @@
 <%= provide(:contact, "active") %>
 <%= provide(:title, "Contact") %>
 
-<%= @hash.inspect %>
-<%= @marker.inspect %>
-<%= @user.inspect %>
-
 <!--<div id="map-canvas">
     <div id="map"></div>
 </div>
 -->
 
-<div style='width: 800px;'>
-  <div id="map" style='width: 1400px; height: 400px;'></div>
-</div>
+<div class = "map_container gmaps4rails_map" id ="map"></div>
 
 <div class="jumbotron">
     <div class="container">
@@ -93,12 +87,14 @@
 </div>
 
 <script type="text/javascript">
-  handler = Gmaps.build('Google');
-  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    handler = Gmaps.build('Google');
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
         markers = handler.addMarkers(<%=raw @hash.to_json %>);
-  handler.bounds.extendWith(markers);
-  handler.getMap().setZoom(16);
-});
+        // to center on a marker
+        handler.map.centerOn(markers[0]); 
+        // to set the map zoom
+        handler.getMap().setZoom(16);
+    });
 </script>
 
 

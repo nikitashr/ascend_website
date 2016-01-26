@@ -4,11 +4,6 @@ class ContactsController < ApplicationController
 
     def index
         @contacts = Contact.all
-        @users = User.all
-            @hash = Gmaps4rails.build_markers(@users) do |user, marker|
-                marker.lat user.latitude
-                marker.lng user.longitude
-            end
     end
 
     def show
@@ -17,6 +12,11 @@ class ContactsController < ApplicationController
 
     def new
         @contact = Contact.new
+        @users = User.all
+            @hash = Gmaps4rails.build_markers(@users) do |user, marker|
+                marker.lat user.latitude
+                marker.lng user.longitude
+            end
     end
 
     def create
@@ -47,14 +47,14 @@ class ContactsController < ApplicationController
     end
 
     private
-    def contact_params
-    params.require(:contact).permit(:name, :email, :company_name, :company_url, :message)
-    end
+        def contact_params
+            params.require(:contact).permit(:name, :email, :company_name, :company_url, :message)
+        end
 
-    def authenticate
-    if authenticate_with_http_basic { |u, p| u == 'admin' && p == 'admin123' }
-    else
-      request_http_basic_authentication
-    end
-    end
-    end
+        def authenticate
+            if authenticate_with_http_basic { |u, p| u == 'admin' && p == 'ascend123' }
+            else
+                request_http_basic_authentication
+              end
+        end
+end

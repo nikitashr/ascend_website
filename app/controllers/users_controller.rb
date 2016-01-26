@@ -78,9 +78,9 @@ class UsersController < ApplicationController
     end
 
     def authenticate
-    if authenticate_with_http_basic { |u, p| u == 'admin' && p == 'ascend123' }
-    else
-      request_http_basic_authentication
+      if authenticate_with_http_basic { |u, p| u == 'admin' && p == 'ascend123' }
+      else
+        request_http_basic_authentication
+      end
     end
-  end
 end
