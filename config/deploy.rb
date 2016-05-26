@@ -1,14 +1,8 @@
 # config valid only for current version of Capistrano
 lock '3.5.0'
 
-server 'ascend.com.np', roles:[:web, :app, :db], primary: true
-
-set :repo_url, 		'https://git.heroku.com/ascendinfotech.git'
-set :application, 	'ascendinfotech'
-set :user, 			'ascend'
-set :puma_threads, 	[4, 16]
-set :puma_workers, 	0
-
+set :application, 'ascendinfotech'
+set :repo_url, 'https://git.heroku.com/ascendinfotech.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
