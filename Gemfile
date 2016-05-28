@@ -26,10 +26,10 @@ gem 'pg'
 
 group :development, :test do
     gem 'sqlite3'
-    gem 'capistrano',         require: false
-    gem 'capistrano-rvm',     require: false
-    gem 'capistrano-rails',   require: false
-    gem 'capistrano-bundler', require: false
-    gem 'capistrano3-puma',   require: false
+    gem 'capistrano',       '~> 3.5', require: false
+    gem 'capistrano-rvm',             require: false
+    gem 'capistrano-rails', '~> 1.1', require: false
+    gem 'capistrano-bundler',         require: false
+    gem 'capistrano3-puma',           require: false
 end
 
