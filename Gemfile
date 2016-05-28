@@ -22,10 +22,13 @@ gem 'underscore-rails'
 
 gem 'spring',        group: :development
 gem 'puma'
-gem 'pg'
+# gem 'pg'
+# Since we do not use database at all, we do not need postgres,
+# And to make it easy, we just write sqlite3 in config/database.yml
+# that means sqlite3 gem should be available here, not inside development
+gem 'sqlite3'
 
 group :development, :test do
-    gem 'sqlite3'
     gem 'capistrano',       '~> 3.5', require: false
     gem 'capistrano-rvm',             require: false
     gem 'capistrano-rails', '~> 1.1', require: false
