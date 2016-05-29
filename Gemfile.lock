@@ -80,7 +80,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
-    libv8 (3.16.14.7)
+    libv8 (3.16.14.15)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.99)
@@ -89,7 +89,10 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.1.1)
+<<<<<<< HEAD
     pg (0.12.2)
+=======
+>>>>>>> 682a168ba1e6cab3e7bcb61e9d580c5adc7e1675
     puma (2.15.3)
     rack (1.5.5)
     rack-test (0.6.3)
@@ -159,9 +162,15 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
+<<<<<<< HEAD
   capistrano
   capistrano-bundler
   capistrano-rails
+=======
+  capistrano (~> 3.5)
+  capistrano-bundler
+  capistrano-rails (~> 1.1)
+>>>>>>> 682a168ba1e6cab3e7bcb61e9d580c5adc7e1675
   capistrano-rvm
   capistrano3-puma
   coffee-rails (~> 4.0.0)
@@ -170,7 +179,6 @@ DEPENDENCIES
   gmaps4rails
   jbuilder (~> 2.0)
   jquery-rails
-  pg
   puma
   rails (= 4.1.8)
   recaptcha
