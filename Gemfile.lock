@@ -89,6 +89,10 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.1.1)
+<<<<<<< HEAD
+    pg (0.12.2)
+=======
+>>>>>>> 682a168ba1e6cab3e7bcb61e9d580c5adc7e1675
     puma (2.15.3)
     rack (1.5.5)
     rack-test (0.6.3)
@@ -158,9 +162,15 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
+<<<<<<< HEAD
+  capistrano
+  capistrano-bundler
+  capistrano-rails
+=======
   capistrano (~> 3.5)
   capistrano-bundler
   capistrano-rails (~> 1.1)
+>>>>>>> 682a168ba1e6cab3e7bcb61e9d580c5adc7e1675
   capistrano-rvm
   capistrano3-puma
   coffee-rails (~> 4.0.0)

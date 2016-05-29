@@ -49,6 +49,7 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
+
 server 'ascend.com.np',
    user: 'ascend',
    roles: %w{web app}
