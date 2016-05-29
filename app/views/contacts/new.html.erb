@@ -79,7 +79,9 @@
 
         <div class="actions form-group">
             <div class="col-sm-offset-3 col-sm-10">
-                <%= f.submit 'Submit', class: 'btn btn-large btn-inverse'%>
+                <%= link_to "Submit", thankyou_path, :class => "btn btn-large btn-inverse" %>
+
+                <%#= f.submit 'Submit', class: 'btn btn-large btn-inverse'%>    
             </div>
         </div>
      
