@@ -8,6 +8,12 @@ class PagesController < ApplicationController
   def services
   end
 
+  def emedicsuite
+  end
+
+  def karma 
+  end
+  
   def portfolio
   end
 

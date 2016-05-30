@@ -1,15 +1,21 @@
-.main-page-content{
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
 html, body {
 	height: 100%;
 	margin: 0;
 }
 
-.navbar{
-	background-color: #242729;
+.main-page-content{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.container {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.container_nav {
+	margin: 0 auto;
+	width: 70%
 }
 
 .wrapper {
@@ -26,6 +32,30 @@ html, body {
 
 .hidden {
 	display: none;
+}
+
+.col-md-3 a {
+	color: #555;
+	text-decoration: none;
+}
+
+.map_container {
+  padding: 6px;
+  border-width: 1px;
+  width: 735px;
+}
+.gmaps4rails_map {
+  width: 100%;
+  height: 427px;
+}
+
+.btn {
+	color: #CCCCCC;
+	background-color: #434343;
+}
+
+.navbar{
+	background-color: #242729;
 }
 
 .push{
@@ -58,24 +88,4 @@ html, body {
 
 .footer-divider {
 	border-color: #7a7a7a;
-}
-
-.map_container {
-  padding: 6px;
-  border-width: 1px;
-  width: 735px;
-}
-.gmaps4rails_map {
-  width: 100%;
-  height: 427px;
-}
-
-.btn {
-	color: #CCCCCC;
-	background-color: #434343;
-}
-
-.col-md-3 a {
-	color: #333333;
-	text-decoration: none;
 }
