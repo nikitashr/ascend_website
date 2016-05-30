@@ -92,11 +92,37 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1>How we work</h1>
-        
-        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        
-        <p><%= link_to "Learn More &raquo;".html_safe, about_path, :class => "btn btn-inverse" %></p>
+        <h1>What we offer</h1>
+        <br>
+        <div class="row">
+            <div class="col-sm-6 homewidget">
+                <span class="fa fa-building-o" aria-hidden="true"></span>
+                <h3> Enterprise-wide Applications</h3>
+                <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vehicula erat non congue cursus. Aenean auctor nulla quis augue dictum, sed sagittis odio varius <a href="#"> Link </a> </p>
+            </div>  
+            
+            <div class="col-sm-6 homewidget">
+                <span class="fa fa-laptop" aria-hidden="true"></span>
+                <h3>Web-based Applications</h3>
+                <p> Duis tempus leo vitae ipsum viverra, blandit condimentum sapien porttitor. Duis porttitor sed metus eget mollis. Curabitur bibendum imperdiet tortor, ut pulvinar purus elementum nspendisse at erat luctus. </p>
+            </div>  
+        </div>
+        <br>
+        <div class = "row">
+            <div class="col-sm-6 homewidget">
+                <span class="fa fa-tablet" aria-hidden="true"></span>
+                <h3>Mobile Applications</h3>
+                <p> Cras aliquet venenatis porttitor. Donec rutrum sapien et sapien dignissim, eu dapibus mi molestie. Suspendisse dictum convallis quam et sodales. Praesent non enim et magna congue gravida.  </p>
+            </div> 
 
+            <div class="col-sm-6 homewidget">
+                <span class="fa fa-shopping-cart" aria-hidden="true"></span>
+                <h3>eCommerce</h3>
+                <p> Cras aliquet venenatis porttitor. Donec rutrum sapien et sapien dignissim, eu dapibus mi molestie. Suspendisse dictum convallis quam et sodales. Praesent non enim et magna congue gravida.  </p>
+            </div>   
+        </div>
+
+        <hr>
+        <p align="center"><%= link_to "Visit Our Products &raquo;".html_safe, services_path, :class => "btn btn-inverse" %></p>
     </div>
 </div>
