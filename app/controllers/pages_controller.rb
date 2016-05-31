@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def services
+  def products
   end
 
   def emedicsuite

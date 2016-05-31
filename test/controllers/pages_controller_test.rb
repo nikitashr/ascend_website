@@ -6,8 +6,8 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get services" do
-    get :services
+  test "should get products" do
+    get :products
     assert_response :success
   end
 
