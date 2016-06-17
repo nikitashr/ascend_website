@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "webappdevelopermode@gmail.com"
+  default from: "infotech.ascend@gmail.com"
 
   def welcome_email(contact)
     @contact = contact

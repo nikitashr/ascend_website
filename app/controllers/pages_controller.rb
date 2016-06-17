@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   def products
   end
 
+  def services
+  end
+
   def emedicsuite
   end
 
@@ -15,9 +18,6 @@ class PagesController < ApplicationController
   end
   
   def portfolio
-  end
-
-  def team
   end
 
   def contact
