@@ -58,6 +58,10 @@ html, body {
 	background-color: #242729;
 }
 
+.productwidget{
+	padding: 50px;
+}
+
 .products{
 	color: #434343;
 }
@@ -66,9 +70,24 @@ html, body {
   	text-align: center;
 }
 
+.homewidget p{
+	text-align: left;
+	font-size: 15px;
+	line-height: 1.71;
+}
+
 .homewidget span{
-  	padding: 50px 0px 0px 0px;
   	background: transparent;
+}
+
+.widget-left{
+	width: 40%;
+	margin-right: 150px;
+}
+
+.widget-right{
+	width: 40%;
+	margin-bottom: 70px;
 }
 
 .fa-plus-circle {
